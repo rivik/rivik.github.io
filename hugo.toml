@@ -1,6 +1,6 @@
 baseURL = "https://rivik.github.io/"
 languageCode = "en-us"
-title = "Ilya Rusalowski"
+title = "Ilya Rusalowski hub"
 theme = "PaperMod"
 
 enableRobotsTXT = true
@@ -30,7 +30,19 @@ buildExpired = false
 
 [params.homeInfoParams]
   Title = "Ilya Rusalowski"
-  Content = "Personal hub: originals + reposts from my projects"
+  Content = "Personal hub: originals + reposts from my projects. More on the <a href=\"/about/\">about</a> page."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/rivik"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/ilya-rusalowski/"
+
+[[params.socialIcons]]
+  name = "x"
+  url = "https://x.com/IlyaRusalowski"
 
 [[menu.main]]
   identifier = "about"
