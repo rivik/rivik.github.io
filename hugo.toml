@@ -29,8 +29,8 @@ buildExpired = false
   ShowRssButtonInSectionTermList = true
 
 [params.homeInfoParams]
-  Title = "Ilya Rusalowski"
-  Content = "Personal hub: originals + reposts from my projects. More on the <a href=\"/about/\">about</a> page."
+  Title = "What is it"
+  Content = "Personal hub/blog of Ilya Rusalowski: originals + reposts from my projects.\n\nMore on the <a href=\"/about/\">about</a> page."
 
 [[params.socialIcons]]
   name = "github"
