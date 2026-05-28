@@ -6,6 +6,7 @@ tags: ["agents", "sandboxing", "landlock", "go", "claude-code", "codex", "gemini
 categories: ["Tools"]
 summary: "Why I built agent-landlock — a small Go wrapper that uses Linux Landlock LSM to give coding agents YOLO mode without letting them escape the project directory."
 canonicalURL: "https://www.linkedin.com/posts/ilya-rusalowski_i-was-afraid-of-agents-yolo-mode-for-half-activity-7459335865316622336-Z549"
+ShowCanonicalLink: true
 ---
 
 I was afraid of agents yolo-mode for half a year. All my systems backed up, secrets encrypted, credentials scoped (I can't force push from my daily account, etc). But I just can't stand when agent do `npm install -g` (in a golang repo 😬, when global md says always install tools to proj dir).
