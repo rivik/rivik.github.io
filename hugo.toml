@@ -1,6 +1,6 @@
 baseURL = "https://rivik.github.io/"
 languageCode = "en-us"
-title = "Ilya Rusalowski hub"
+title = "Ilya Rusalowski Hub"
 theme = "PaperMod"
 
 enableRobotsTXT = true
