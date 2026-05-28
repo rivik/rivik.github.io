@@ -2,8 +2,21 @@
 title: "About"
 url: "/about/"
 summary: "About Ilya Rusalowski"
+date: 2026-05-28
 ShowReadingTime: false
 ShowToc: false
+profile:
+  name: "Ilya Rusalowski"
+  jobTitle: "CTO and co-founder, iProxy.online"
+  worksFor:
+    - name: "iProxy.online"
+      url: "https://iproxy.online"
+    - name: "Sintonia Strategy & Technology"
+      url: "https://sintoniastrategy.com"
+  sameAs:
+    - "https://github.com/rivik"
+    - "https://www.linkedin.com/in/ilya-rusalowski/"
+    - "https://x.com/IlyaRusalowski"
 ---
 
 Hi, I'm Ilya, I like computers 🥲
@@ -25,6 +38,6 @@ I live in Portugal. I'm an engineer, an entrepreneur, and — I hope — a decen
 
 **Find me:**
 - GitHub: [@rivik](https://github.com/rivik) · [sintoniastrategy](https://github.com/sintoniastrategy) · [iproxy-online](https://github.com/iproxy-online)
-- [in/ilya-rusalowski](https://www.linkedin.com/in/ilya-rusalowski)
+- [in/ilya-rusalowski](https://www.linkedin.com/in/ilya-rusalowski/)
 - [x.com/IlyaRusalowski](https://x.com/IlyaRusalowski)
 - [dev.to/rivik](https://dev.to/rivik)
