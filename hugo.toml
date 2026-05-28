@@ -17,6 +17,8 @@ buildExpired = false
 [params]
   env = "production"
   defaultTheme = "auto"
+  mainSections = ["posts"]
+  ShowCanonicalLink = true
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
