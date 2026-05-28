@@ -29,8 +29,8 @@ buildExpired = false
   ShowRssButtonInSectionTermList = true
 
 [params.homeInfoParams]
-  Title = "What is it"
-  Content = "Personal hub/blog of Ilya Rusalowski: originals + reposts from my projects.\n\nMore on the <a href=\"/about/\">about</a> page."
+  Title = "Hi 👋"
+  Content = "I'm Ilya — CTO and co-founder of <a href=\"https://iproxy.online\">iProxy.online</a>, also running <a href=\"https://sintoniastrategy.com\">Sintonia Strategy & Technology</a> on the side. Engineer and entrepreneur, based in Portugal.\n\nThis hub collects my originals plus reposts from my projects. More on the <a href=\"/about/\">about</a> page."
 
 [[params.socialIcons]]
   name = "github"
