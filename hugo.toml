@@ -1,6 +1,6 @@
 baseURL = "https://rivik.github.io/"
 languageCode = "en-us"
-title = "rivik"
+title = "Ilya Rusalowski"
 theme = "PaperMod"
 
 enableRobotsTXT = true
@@ -29,8 +29,26 @@ buildExpired = false
   ShowRssButtonInSectionTermList = true
 
 [params.homeInfoParams]
-  Title = "rivik"
-  Content = "Personal hub: originals + reposts from LinkedIn, dev.to, iproxy."
+  Title = "Ilya Rusalowski"
+  Content = "Personal hub: originals + reposts from my projects"
+
+[[menu.main]]
+  identifier = "about"
+  name = "about"
+  url = "/about/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "posts"
+  name = "posts"
+  url = "/posts/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "tags"
+  name = "tags"
+  url = "/tags/"
+  weight = 30
 
 [markup.goldmark.renderer]
   unsafe = true

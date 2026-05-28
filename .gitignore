@@ -1,6 +1,7 @@
 # Hugo build output
 /public/
 /resources/
+.claude/
 .hugo_build.lock
 
 # OS
