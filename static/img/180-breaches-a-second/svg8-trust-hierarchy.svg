@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 440" font-family="'Georgia', 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa"/>
+      <stop offset="100%" style="stop-color:#e9ecef"/>
+    </linearGradient>
+    <filter id="shadow8">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow8" markerWidth="8" markerHeight="6" refX="4" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#adb5bd"/>
+    </marker>
+  </defs>
+
+  <rect width="780" height="440" fill="url(#bg8)" rx="8"/>
+
+  <!-- Title -->
+  <text x="390" y="30" text-anchor="middle" font-size="11" fill="#868e96" font-weight="bold" letter-spacing="1.5">AGENT TRUST HIERARCHY</text>
+
+  <!-- Layer 0: Secure Enclave (root) -->
+  <rect x="190" y="50" width="400" height="55" rx="6" fill="#212529" filter="url(#shadow8)"/>
+  <text x="390" y="73" text-anchor="middle" font-size="13" fill="#fff" font-weight="bold">Secure Enclave</text>
+  <text x="390" y="93" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.7)">Root of trust — holds all cryptographic keys</text>
+
+  <!-- Trust label -->
+  <text x="100" y="78" text-anchor="middle" font-size="9" fill="#2d6a4f" font-weight="bold" letter-spacing="1">TRUSTED</text>
+  <rect x="70" y="82" width="60" height="1" fill="#2d6a4f" opacity="0.3"/>
+
+  <!-- Connector -->
+  <line x1="390" y1="105" x2="390" y2="120" stroke="#adb5bd" stroke-width="1.5"/>
+
+  <!-- Layer 1: OS Kernel -->
+  <rect x="160" y="120" width="460" height="55" rx="6" fill="#fff" filter="url(#shadow8)" stroke="#1d3557" stroke-width="1.5"/>
+  <rect x="160" y="120" width="460" height="5" rx="6" fill="#1d3557"/>
+  <text x="390" y="148" text-anchor="middle" font-size="13" fill="#1d3557" font-weight="bold">OS Kernel</text>
+  <text x="390" y="165" text-anchor="middle" font-size="10" fill="#868e96">Enforces sandboxing, mediates all IPC</text>
+
+  <!-- Connector -->
+  <line x1="390" y1="175" x2="390" y2="190" stroke="#adb5bd" stroke-width="1.5"/>
+
+  <!-- Layer 2: DLP Layer -->
+  <rect x="130" y="190" width="520" height="55" rx="6" fill="#fff" filter="url(#shadow8)" stroke="#457b9d" stroke-width="1.5"/>
+  <rect x="130" y="190" width="520" height="5" rx="6" fill="#457b9d"/>
+  <text x="390" y="218" text-anchor="middle" font-size="13" fill="#457b9d" font-weight="bold">DLP Layer (Apple Intelligence)</text>
+  <text x="390" y="235" text-anchor="middle" font-size="10" fill="#868e96">Inspects data flows, classifies content, enforces rules</text>
+
+  <!-- Connector -->
+  <line x1="390" y1="245" x2="390" y2="260" stroke="#adb5bd" stroke-width="1.5"/>
+
+  <!-- Layer 3: Agent Runtime -->
+  <rect x="100" y="260" width="580" height="55" rx="6" fill="#fff" filter="url(#shadow8)" stroke="#2a9d8f" stroke-width="1.5"/>
+  <rect x="100" y="260" width="580" height="5" rx="6" fill="#2a9d8f"/>
+  <text x="390" y="288" text-anchor="middle" font-size="13" fill="#2a9d8f" font-weight="bold">Agent Runtime</text>
+  <text x="390" y="305" text-anchor="middle" font-size="10" fill="#868e96">Sandboxed, capability-scoped permissions, no direct key access</text>
+
+  <!-- Sandboxed label -->
+  <text x="100" y="288" text-anchor="end" font-size="9" fill="#e63946" font-weight="bold" letter-spacing="1">SANDBOXED</text>
+  <rect x="70" y="292" width="30" height="1" fill="#e63946" opacity="0.3"/>
+
+  <!-- Connector: splits to two agents -->
+  <line x1="300" y1="315" x2="300" y2="335" stroke="#adb5bd" stroke-width="1.5"/>
+  <line x1="480" y1="315" x2="480" y2="335" stroke="#adb5bd" stroke-width="1.5"/>
+
+  <!-- Agent A -->
+  <rect x="195" y="335" width="210" height="50" rx="6" fill="#fff" filter="url(#shadow8)" stroke="#dee2e6" stroke-width="1"/>
+  <text x="300" y="358" text-anchor="middle" font-size="12" fill="#495057" font-weight="bold">Agent A</text>
+  <text x="300" y="375" text-anchor="middle" font-size="10" fill="#868e96">Reads email, calendar</text>
+
+  <!-- Agent B -->
+  <rect x="375" y="335" width="210" height="50" rx="6" fill="#fff" filter="url(#shadow8)" stroke="#dee2e6" stroke-width="1"/>
+  <text x="480" y="358" text-anchor="middle" font-size="12" fill="#495057" font-weight="bold">Agent B</text>
+  <text x="480" y="375" text-anchor="middle" font-size="10" fill="#868e96">Writes to external API</text>
+
+  <!-- Communication arrow between agents (goes UP through DLP, then back down) -->
+  <path d="M405 350 L390 350 L390 230" stroke="#e63946" stroke-width="1.5" stroke-dasharray="5,3" fill="none" marker-end="url(#arrow8)"/>
+  <path d="M390 230 L390 350 L375 350" stroke="#e63946" stroke-width="1.5" stroke-dasharray="5,3" fill="none"/>
+
+  <!-- Label on communication path -->
+  <rect x="400" y="280" width="210" height="34" rx="4" fill="#e63946" opacity="0.06"/>
+  <text x="505" y="294" text-anchor="middle" font-size="9" fill="#e63946" font-weight="bold">All agent-to-agent traffic</text>
+  <text x="505" y="307" text-anchor="middle" font-size="9" fill="#e63946" font-weight="bold">passes through DLP layer</text>
+
+  <!-- Bottom annotation -->
+  <text x="390" y="418" text-anchor="middle" font-size="11" fill="#495057" font-style="italic">No agent can establish a channel that bypasses this stack.</text>
+  <text x="390" y="435" text-anchor="middle" font-size="10" fill="#868e96">Per-object encryption protects against external attackers — not against the OS itself.</text>
+</svg>

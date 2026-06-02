@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 440" font-family="'Georgia', 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa"/>
+      <stop offset="100%" style="stop-color:#e9ecef"/>
+    </linearGradient>
+    <filter id="shadow3">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="780" height="440" fill="url(#bg3)" rx="8"/>
+
+  <!-- Column headers -->
+  <text x="160" y="40" text-anchor="middle" font-size="12" fill="#868e96" font-weight="bold" letter-spacing="1.5">THREAT</text>
+  <text x="390" y="40" text-anchor="middle" font-size="12" fill="#868e96" font-weight="bold" letter-spacing="1.5">FIX</text>
+  <text x="630" y="40" text-anchor="middle" font-size="12" fill="#868e96" font-weight="bold" letter-spacing="1.5">PATTERN</text>
+
+  <!-- Layer 1: Network -->
+  <rect x="40" y="65" width="700" height="100" rx="6" fill="#fff" filter="url(#shadow3)" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="40" y="65" width="5" height="100" rx="3" fill="#2d6a4f"/>
+
+  <text x="60" y="93" font-size="11" fill="#2d6a4f" font-weight="bold" letter-spacing="1">LAYER 1</text>
+  <text x="60" y="115" font-size="14" font-weight="bold" fill="#212529">Network eavesdropping</text>
+  <text x="60" y="135" font-size="11" fill="#868e96">Open WiFi, unencrypted HTTP</text>
+  <text x="60" y="150" font-size="11" fill="#868e96">~2010-2015</text>
+
+  <text x="320" y="105" font-size="14" font-weight="bold" fill="#212529">HTTPS / TLS</text>
+  <text x="320" y="125" font-size="11" fill="#868e96">Let's Encrypt, browser defaults</text>
+  <text x="320" y="145" font-size="11" fill="#2d6a4f" font-style="italic">30% -> 95% encrypted traffic</text>
+
+  <text x="560" y="105" font-size="12" fill="#495057">Platform provides infra</text>
+  <text x="560" y="125" font-size="12" fill="#495057">Invisible to user</text>
+  <text x="560" y="145" font-size="12" fill="#495057">Deployed as default</text>
+
+  <!-- Connector -->
+  <text x="390" y="185" text-anchor="middle" font-size="18" fill="#ced4da">|</text>
+  <text x="390" y="197" text-anchor="middle" font-size="10" fill="#adb5bd" font-style="italic">same pattern</text>
+
+  <!-- Layer 2: Authentication -->
+  <rect x="40" y="210" width="700" height="100" rx="6" fill="#fff" filter="url(#shadow3)" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="40" y="210" width="5" height="100" rx="3" fill="#1d3557"/>
+
+  <text x="60" y="238" font-size="11" fill="#1d3557" font-weight="bold" letter-spacing="1">LAYER 2</text>
+  <text x="60" y="260" font-size="14" font-weight="bold" fill="#212529">Credential theft</text>
+  <text x="60" y="280" font-size="11" fill="#868e96">Password reuse, phishing, stuffing</text>
+  <text x="60" y="295" font-size="11" fill="#868e96">~2020-present</text>
+
+  <text x="320" y="250" font-size="14" font-weight="bold" fill="#212529">Passkeys / FIDO2</text>
+  <text x="320" y="270" font-size="11" fill="#868e96">Device-bound keys, biometrics</text>
+  <text x="320" y="290" font-size="11" fill="#1d3557" font-style="italic">800M+ Google accounts enrolled</text>
+
+  <text x="560" y="250" font-size="12" fill="#495057">OS-level support</text>
+  <text x="560" y="270" font-size="12" fill="#495057">No shared secret</text>
+  <text x="560" y="290" font-size="12" fill="#495057">Regulatory mandates</text>
+
+  <!-- Connector -->
+  <text x="390" y="330" text-anchor="middle" font-size="18" fill="#ced4da">|</text>
+  <text x="390" y="342" text-anchor="middle" font-size="10" fill="#adb5bd" font-style="italic">same pattern</text>
+
+  <!-- Layer 3: Data spillage -->
+  <rect x="40" y="355" width="700" height="100" rx="6" fill="#fff" filter="url(#shadow3)" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="40" y="355" width="5" height="100" rx="3" fill="#e63946"/>
+
+  <text x="60" y="383" font-size="11" fill="#e63946" font-weight="bold" letter-spacing="1">LAYER 3</text>
+  <text x="60" y="405" font-size="14" font-weight="bold" fill="#212529">Casual data spillage</text>
+  <text x="60" y="425" font-size="11" fill="#868e96">Signalgate, sensitive data in ChatGPT</text>
+  <text x="60" y="440" font-size="11" fill="#868e96">emerging</text>
+
+  <text x="320" y="395" font-size="14" font-weight="bold" fill="#212529">On-Device AI DLP</text>
+  <text x="320" y="415" font-size="11" fill="#868e96">Local LLM classification, warnings</text>
+  <text x="320" y="435" font-size="11" fill="#e63946" font-style="italic">Apple Communication Safety as template</text>
+
+  <text x="560" y="395" font-size="12" fill="#495057">Runs on neural engine</text>
+  <text x="560" y="415" font-size="12" fill="#495057">No data leaves device</text>
+  <text x="560" y="435" font-size="12" fill="#495057">Opt-out by default</text>
+</svg>

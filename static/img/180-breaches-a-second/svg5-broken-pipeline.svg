@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" font-family="'Georgia', 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa"/>
+      <stop offset="100%" style="stop-color:#e9ecef"/>
+    </linearGradient>
+    <filter id="shadow5">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="760" height="420" fill="url(#bg5)" rx="8"/>
+
+  <!-- Left side: The pipeline -->
+  <text x="200" y="38" text-anchor="middle" font-size="12" fill="#868e96" font-weight="bold" letter-spacing="1.5">THE TALENT PIPELINE</text>
+
+  <!-- Funnel shape -->
+  <!-- Wide top: junior hiring -->
+  <polygon points="50,60 350,60 310,130 90,130" fill="#dee2e6" stroke="#ced4da" stroke-width="1"/>
+  <text x="200" y="85" text-anchor="middle" font-size="12" fill="#495057" font-weight="bold">Junior developer hiring</text>
+  <text x="200" y="105" text-anchor="middle" font-size="11" fill="#868e96">The entry point for all engineers</text>
+
+  <!-- Break / gap -->
+  <rect x="100" y="138" width="200" height="36" rx="4" fill="#e63946" opacity="0.15"/>
+  <line x1="100" y1="138" x2="300" y2="138" stroke="#e63946" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="100" y1="174" x2="300" y2="174" stroke="#e63946" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="200" y="161" text-anchor="middle" font-size="13" fill="#e63946" font-weight="bold">-60% postings (2022-2024)</text>
+
+  <!-- Narrow bottom: senior pipeline -->
+  <polygon points="120,182 280,182 260,252 140,252" fill="#ced4da" stroke="#adb5bd" stroke-width="1"/>
+  <text x="200" y="210" text-anchor="middle" font-size="11" fill="#495057" font-weight="bold">Mid-level engineers</text>
+  <text x="200" y="230" text-anchor="middle" font-size="10" fill="#868e96">Severely reduced cohort</text>
+
+  <!-- Even narrower -->
+  <polygon points="150,260 250,260 240,320 160,320" fill="#adb5bd" stroke="#868e96" stroke-width="1"/>
+  <text x="200" y="287" text-anchor="middle" font-size="11" fill="#495057" font-weight="bold">Senior / Lead</text>
+  <text x="200" y="305" text-anchor="middle" font-size="10" fill="#868e96">2031-2036 gap</text>
+
+  <!-- Trickle -->
+  <polygon points="170,328 230,328 220,370 180,370" fill="#868e96" stroke="#495057" stroke-width="1"/>
+  <text x="200" y="353" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">Security?</text>
+
+  <!-- Right side: Key stats -->
+  <text x="560" y="38" text-anchor="middle" font-size="12" fill="#868e96" font-weight="bold" letter-spacing="1.5">KEY SIGNALS</text>
+
+  <!-- Stat cards -->
+  <rect x="410" y="60" width="310" height="64" rx="5" fill="#fff" filter="url(#shadow5)" stroke="#dee2e6" stroke-width="1"/>
+  <text x="430" y="86" font-size="26" font-weight="bold" fill="#e63946">67%</text>
+  <text x="500" y="82" font-size="12" fill="#212529" font-weight="bold">hiring cliff</text>
+  <text x="500" y="100" font-size="10" fill="#868e96">in 2024-2026 means fewer leaders by 2031</text>
+
+  <rect x="410" y="138" width="310" height="64" rx="5" fill="#fff" filter="url(#shadow5)" stroke="#dee2e6" stroke-width="1"/>
+  <text x="430" y="166" font-size="26" font-weight="bold" fill="#e63946">66%</text>
+  <text x="500" y="160" font-size="12" fill="#212529" font-weight="bold">of developers frustrated</text>
+  <text x="500" y="178" font-size="10" fill="#868e96">with AI code that is "almost right, but not quite"</text>
+
+  <rect x="410" y="216" width="310" height="64" rx="5" fill="#fff" filter="url(#shadow5)" stroke="#dee2e6" stroke-width="1"/>
+  <text x="430" y="244" font-size="26" font-weight="bold" fill="#e63946">45%</text>
+  <text x="500" y="238" font-size="12" fill="#212529" font-weight="bold">find debugging AI code</text>
+  <text x="500" y="256" font-size="10" fill="#868e96">more time-consuming than writing from scratch</text>
+
+  <rect x="410" y="294" width="310" height="64" rx="5" fill="#fff" filter="url(#shadow5)" stroke="#dee2e6" stroke-width="1"/>
+  <text x="430" y="322" font-size="22" font-weight="bold" fill="#495057">0</text>
+  <text x="460" y="318" font-size="12" fill="#212529" font-weight="bold">new engineers at Salesforce</text>
+  <text x="460" y="336" font-size="10" fill="#868e96">CEO announced zero hires in 2025</text>
+
+  <!-- Bottom note -->
+  <text x="380" y="400" text-anchor="middle" font-size="10" fill="#adb5bd" font-style="italic">Sources: Stack Overflow 2025 Developer Survey, AlgeriaTech, CodeConductor</text>
+</svg>

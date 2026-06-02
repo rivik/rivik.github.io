@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" font-family="'Georgia', 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa"/>
+      <stop offset="100%" style="stop-color:#e9ecef"/>
+    </linearGradient>
+    <filter id="shadow6">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow6" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e63946"/>
+    </marker>
+  </defs>
+
+  <rect width="880" height="380" fill="url(#bg6)" rx="8"/>
+
+  <!-- Title -->
+  <text x="440" y="32" text-anchor="middle" font-size="11" fill="#868e96" font-weight="bold" letter-spacing="1.5">AGENT ATTACK CHAIN</text>
+
+  <!-- Step 1: Attacker crafts email -->
+  <rect x="30" y="55" width="155" height="90" rx="6" fill="#fff" filter="url(#shadow6)" stroke="#e63946" stroke-width="1.5"/>
+  <text x="107" y="80" text-anchor="middle" font-size="11" fill="#e63946" font-weight="bold">STEP 1</text>
+  <text x="107" y="100" text-anchor="middle" font-size="12" fill="#212529" font-weight="bold">Attacker sends email</text>
+  <text x="107" y="118" text-anchor="middle" font-size="10" fill="#868e96">Hidden prompt injection</text>
+  <text x="107" y="132" text-anchor="middle" font-size="10" fill="#868e96">embedded in message body</text>
+
+  <!-- Arrow 1-2 -->
+  <line x1="190" y1="100" x2="225" y2="100" stroke="#e63946" stroke-width="2" marker-end="url(#arrow6)"/>
+
+  <!-- Step 2: Agent ingests -->
+  <rect x="235" y="55" width="155" height="90" rx="6" fill="#fff" filter="url(#shadow6)" stroke="#e63946" stroke-width="1.5"/>
+  <text x="312" y="80" text-anchor="middle" font-size="11" fill="#e63946" font-weight="bold">STEP 2</text>
+  <text x="312" y="100" text-anchor="middle" font-size="12" fill="#212529" font-weight="bold">AI agent ingests</text>
+  <text x="312" y="118" text-anchor="middle" font-size="10" fill="#868e96">Copilot reads email via</text>
+  <text x="312" y="132" text-anchor="middle" font-size="10" fill="#868e96">RAG retrieval pipeline</text>
+
+  <!-- Arrow 2-3 -->
+  <line x1="395" y1="100" x2="430" y2="100" stroke="#e63946" stroke-width="2" marker-end="url(#arrow6)"/>
+
+  <!-- Step 3: Executes injection -->
+  <rect x="440" y="55" width="175" height="90" rx="6" fill="#fff" filter="url(#shadow6)" stroke="#e63946" stroke-width="1.5"/>
+  <text x="527" y="80" text-anchor="middle" font-size="11" fill="#e63946" font-weight="bold">STEP 3</text>
+  <text x="527" y="100" text-anchor="middle" font-size="12" fill="#212529" font-weight="bold">Executes injection</text>
+  <text x="527" y="118" text-anchor="middle" font-size="10" fill="#868e96">Agent follows attacker's</text>
+  <text x="527" y="132" text-anchor="middle" font-size="10" fill="#868e96">instructions as its own</text>
+
+  <!-- Arrow 3-4 -->
+  <line x1="620" y1="100" x2="655" y2="100" stroke="#e63946" stroke-width="2" marker-end="url(#arrow6)"/>
+
+  <!-- Step 4: Exfiltration result -->
+  <rect x="665" y="55" width="185" height="90" rx="6" fill="#e63946" filter="url(#shadow6)"/>
+  <text x="757" y="80" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">RESULT</text>
+  <text x="757" y="100" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">Data exfiltrated</text>
+  <text x="757" y="118" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.85)">Emails, files, chat logs</text>
+  <text x="757" y="132" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.85)">embedded in outbound links</text>
+
+  <!-- Divider -->
+  <line x1="60" y1="180" x2="820" y2="180" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="340" y="170" width="200" height="20" rx="4" fill="url(#bg6)"/>
+  <text x="440" y="185" text-anchor="middle" font-size="11" fill="#457b9d" font-weight="bold">WHAT THE AGENT CAN ACCESS</text>
+
+  <!-- Agent access panel -->
+  <rect x="80" y="205" width="720" height="110" rx="6" fill="#fff" filter="url(#shadow6)" stroke="#457b9d" stroke-width="1.5"/>
+  <rect x="80" y="205" width="720" height="6" rx="6" fill="#457b9d"/>
+
+  <!-- Data source boxes -->
+  <rect x="110" y="230" width="110" height="50" rx="4" fill="#f1f3f5" stroke="#dee2e6" stroke-width="1"/>
+  <text x="165" y="252" text-anchor="middle" font-size="11" font-weight="bold" fill="#495057">Email</text>
+  <text x="165" y="268" text-anchor="middle" font-size="9" fill="#868e96">All messages</text>
+
+  <rect x="240" y="230" width="110" height="50" rx="4" fill="#f1f3f5" stroke="#dee2e6" stroke-width="1"/>
+  <text x="295" y="252" text-anchor="middle" font-size="11" font-weight="bold" fill="#495057">OneDrive</text>
+  <text x="295" y="268" text-anchor="middle" font-size="9" fill="#868e96">All files</text>
+
+  <rect x="370" y="230" width="110" height="50" rx="4" fill="#f1f3f5" stroke="#dee2e6" stroke-width="1"/>
+  <text x="425" y="252" text-anchor="middle" font-size="11" font-weight="bold" fill="#495057">Teams</text>
+  <text x="425" y="268" text-anchor="middle" font-size="9" fill="#868e96">All chats</text>
+
+  <rect x="500" y="230" width="110" height="50" rx="4" fill="#f1f3f5" stroke="#dee2e6" stroke-width="1"/>
+  <text x="555" y="252" text-anchor="middle" font-size="11" font-weight="bold" fill="#495057">SharePoint</text>
+  <text x="555" y="268" text-anchor="middle" font-size="9" fill="#868e96">All documents</text>
+
+  <rect x="630" y="230" width="140" height="50" rx="4" fill="#f1f3f5" stroke="#dee2e6" stroke-width="1"/>
+  <text x="700" y="252" text-anchor="middle" font-size="11" font-weight="bold" fill="#495057">Calendar</text>
+  <text x="700" y="268" text-anchor="middle" font-size="9" fill="#868e96">All events</text>
+
+  <!-- Bottom label -->
+  <text x="440" y="302" text-anchor="middle" font-size="11" fill="#457b9d" font-style="italic">The agent has the user's full identity — and therefore the user's full access</text>
+
+  <!-- Annotation bar -->
+  <rect x="180" y="335" width="520" height="30" rx="6" fill="#e63946" opacity="0.08"/>
+  <text x="440" y="355" text-anchor="middle" font-size="11" fill="#e63946" font-weight="bold">Zero clicks required — CVE-2025-32711 (EchoLeak)</text>
+</svg>

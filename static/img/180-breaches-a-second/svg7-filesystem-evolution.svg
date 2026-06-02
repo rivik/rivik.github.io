@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" font-family="'Georgia', 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa"/>
+      <stop offset="100%" style="stop-color:#e9ecef"/>
+    </linearGradient>
+    <filter id="shadow7">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="880" height="480" fill="url(#bg7)" rx="8"/>
+
+  <!-- Title -->
+  <text x="440" y="32" text-anchor="middle" font-size="11" fill="#868e96" font-weight="bold" letter-spacing="1.5">THE NARROWING: FIVE ERAS OF ACCESS CONTROL</text>
+
+  <!-- Column headers -->
+  <text x="80" y="58" font-size="10" fill="#868e96" font-weight="bold" letter-spacing="1">ERA</text>
+  <text x="280" y="58" font-size="10" fill="#868e96" font-weight="bold" letter-spacing="1">MODEL</text>
+  <text x="560" y="58" font-size="10" fill="#868e96" font-weight="bold" letter-spacing="1">BLAST RADIUS</text>
+  <text x="820" y="58" font-size="10" fill="#868e96" font-weight="bold" letter-spacing="1">STATUS</text>
+
+  <!-- Row 1: Shared Filesystem -->
+  <rect x="30" y="72" width="820" height="65" rx="6" fill="#fff" filter="url(#shadow7)" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="30" y="72" width="5" height="65" rx="3" fill="#868e96"/>
+
+  <text x="50" y="97" font-size="11" fill="#868e96" font-weight="bold">1970s-2000s</text>
+  <text x="50" y="117" font-size="10" fill="#adb5bd">Mainframes, early PCs</text>
+
+  <text x="280" y="97" font-size="13" font-weight="bold" fill="#212529">Shared Filesystem</text>
+  <text x="280" y="117" font-size="10" fill="#868e96">Every process reads every file</text>
+
+  <rect x="560" y="90" width="220" height="14" rx="3" fill="#e63946" opacity="0.7"/>
+  <text x="670" y="101" text-anchor="middle" font-size="9" fill="#fff" font-weight="bold">EVERYTHING</text>
+
+  <text x="820" y="107" text-anchor="middle" font-size="10" fill="#868e96" font-style="italic">legacy</text>
+
+  <!-- Row 2: Per-App Sandbox -->
+  <rect x="30" y="148" width="820" height="65" rx="6" fill="#fff" filter="url(#shadow7)" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="30" y="148" width="5" height="65" rx="3" fill="#495057"/>
+
+  <text x="50" y="173" font-size="11" fill="#495057" font-weight="bold">2007-2012</text>
+  <text x="50" y="193" font-size="10" fill="#adb5bd">iOS, Android, macOS</text>
+
+  <text x="280" y="173" font-size="13" font-weight="bold" fill="#212529">Per-App Sandbox</text>
+  <text x="280" y="193" font-size="10" fill="#868e96">Each app isolated to own directory</text>
+
+  <rect x="560" y="166" width="160" height="14" rx="3" fill="#e76f51" opacity="0.7"/>
+  <text x="640" y="177" text-anchor="middle" font-size="9" fill="#fff" font-weight="bold">OWN APP DATA</text>
+
+  <rect x="800" y="170" width="40" height="18" rx="4" fill="#2d6a4f" opacity="0.15"/>
+  <text x="820" y="183" text-anchor="middle" font-size="9" fill="#2d6a4f" font-weight="bold">done</text>
+
+  <!-- Row 3: Per-Object Encryption -->
+  <rect x="30" y="224" width="820" height="65" rx="6" fill="#fff" filter="url(#shadow7)" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="30" y="224" width="5" height="65" rx="3" fill="#1d3557"/>
+
+  <text x="50" y="249" font-size="11" fill="#1d3557" font-weight="bold">2013-2020</text>
+  <text x="50" y="269" font-size="10" fill="#adb5bd">iOS Secure Enclave</text>
+
+  <text x="280" y="249" font-size="13" font-weight="bold" fill="#212529">Per-Object Encryption</text>
+  <text x="280" y="269" font-size="10" fill="#868e96">Each file has own key, hardware-bound</text>
+
+  <rect x="560" y="242" width="110" height="14" rx="3" fill="#f4a261" opacity="0.7"/>
+  <text x="615" y="253" text-anchor="middle" font-size="9" fill="#fff" font-weight="bold">SINGLE FILE</text>
+
+  <rect x="800" y="246" width="40" height="18" rx="4" fill="#2d6a4f" opacity="0.15"/>
+  <text x="820" y="259" text-anchor="middle" font-size="9" fill="#2d6a4f" font-weight="bold">done</text>
+
+  <!-- Frontier line -->
+  <line x1="50" y1="303" x2="830" y2="303" stroke="#e63946" stroke-width="1" stroke-dasharray="6,4"/>
+  <rect x="360" y="293" width="160" height="20" rx="4" fill="url(#bg7)"/>
+  <text x="440" y="308" text-anchor="middle" font-size="10" fill="#e63946" font-weight="bold" letter-spacing="1">CURRENT FRONTIER</text>
+
+  <!-- Row 4: Identity-Bound Decryption -->
+  <rect x="30" y="320" width="820" height="65" rx="6" fill="#fff" filter="url(#shadow7)" stroke="#457b9d" stroke-width="1.5"/>
+  <rect x="30" y="320" width="5" height="65" rx="3" fill="#457b9d"/>
+
+  <text x="50" y="345" font-size="11" fill="#457b9d" font-weight="bold">2020-present</text>
+  <text x="50" y="365" font-size="10" fill="#adb5bd">Entra ID + Purview</text>
+
+  <text x="280" y="345" font-size="13" font-weight="bold" fill="#212529">Identity-Bound Decryption</text>
+  <text x="280" y="365" font-size="10" fill="#868e96">Documents carry own access policy</text>
+
+  <rect x="560" y="338" width="70" height="14" rx="3" fill="#2a9d8f" opacity="0.7"/>
+  <text x="595" y="349" text-anchor="middle" font-size="9" fill="#fff" font-weight="bold">POLICY</text>
+
+  <rect x="793" y="342" width="55" height="18" rx="4" fill="#457b9d" opacity="0.15"/>
+  <text x="820" y="355" text-anchor="middle" font-size="9" fill="#457b9d" font-weight="bold">partial</text>
+
+  <!-- Row 5: Capability-Scoped Agent Access -->
+  <rect x="30" y="396" width="820" height="65" rx="6" fill="#fff" filter="url(#shadow7)" stroke="#e63946" stroke-width="1.5"/>
+  <rect x="30" y="396" width="5" height="65" rx="3" fill="#e63946"/>
+
+  <text x="50" y="421" font-size="11" fill="#e63946" font-weight="bold">future</text>
+  <text x="50" y="441" font-size="10" fill="#adb5bd">Dennis &amp; Van Horn, 1966</text>
+
+  <text x="280" y="421" font-size="13" font-weight="bold" fill="#212529">Capability-Scoped Agent Access</text>
+  <text x="280" y="441" font-size="10" fill="#868e96">Unforgeable tokens: specific objects, limited time</text>
+
+  <rect x="560" y="414" width="40" height="14" rx="3" fill="#2d6a4f" opacity="0.7"/>
+  <text x="580" y="425" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">3 files</text>
+
+  <rect x="788" y="418" width="62" height="18" rx="4" fill="#e63946" opacity="0.15"/>
+  <text x="819" y="431" text-anchor="middle" font-size="9" fill="#e63946" font-weight="bold">unsolved</text>
+</svg>
