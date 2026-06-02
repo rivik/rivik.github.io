@@ -27,6 +27,13 @@ buildExpired = false
   TocOpen = false
   ShowRssButtonInSectionTermList = true
 
+[params.assets]
+  favicon = "favicon.svg"
+  favicon16x16 = "favicon.svg"
+  favicon32x32 = "favicon.svg"
+  apple_touch_icon = "favicon.svg"
+  safari_pinned_tab = "favicon.svg"
+
 [params.homeInfoParams]
   Title = "Hi 👋"
   Content = "I'm Ilya — CTO and co-founder of <a href=\"https://iproxy.online\">iProxy.online</a>, also running <a href=\"https://sintoniastrategy.com\">Sintonia Strategy & Technology</a> on the side. Engineer and entrepreneur, based in Portugal.\n\nThis hub collects my originals plus reposts from my projects. More on the <a href=\"/about/\">about</a> page."
