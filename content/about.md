@@ -5,18 +5,8 @@ summary: "About Ilya Rusalowski"
 date: 2026-05-28
 ShowReadingTime: false
 ShowToc: false
-profile:
-  name: "Ilya Rusalowski"
-  jobTitle: "CTO and co-founder, iProxy.online"
-  worksFor:
-    - name: "iProxy.online"
-      url: "https://iproxy.online"
-    - name: "Sintonia Strategy & Technology"
-      url: "https://sintoniastrategy.com"
-  sameAs:
-    - "https://github.com/rivik"
-    - "https://www.linkedin.com/in/ilya-rusalowski/"
-    - "https://x.com/IlyaRusalowski"
+# Person data lives in data/person.toml; this flag enables the ProfilePage schema
+profile: true
 ---
 
 Hi, I'm Ilya, I like computers 🥲

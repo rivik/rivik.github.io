@@ -1,24 +1,19 @@
 {{ if .IsHome }}
+{{- /* Person + WebSite graph. The Person @id is the cross-domain entity key — see data/person.toml. */ -}}
+{{- $person := partial "templates/person_node.html" . -}}
+{{- $website := dict
+      "@type" "WebSite"
+      "@id" (printf "%s#website" site.Home.Permalink)
+      "name" site.Title
+      "url" site.Home.Permalink
+      "publisher" (dict "@id" (index $person "@id"))
+-}}
+{{- with site.Params.description }}
+  {{- $website = merge $website (dict "description" (. | plainify | truncate 180)) -}}
+{{- end }}
+{{- $doc := dict "@context" "https://schema.org" "@graph" (slice $person $website) -}}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "{{- ( site.Params.schema.publisherType | default "Organization") | title -}}",
-  "name": {{ site.Title }},
-  "url": {{ site.Home.Permalink }},
-  "description": {{ site.Params.description | plainify | truncate 180 | safeHTML }},
-  {{- if (eq site.Params.schema.publisherType "Person") }}
-  "image": {{ site.Params.assets.favicon | default "favicon.ico" | absURL }},
-  {{- else }}
-  "logo": {{ site.Params.assets.favicon | default "favicon.ico" | absURL }},
-  {{- end }}
-  "sameAs": [
-    {{- if site.Params.schema.sameAs }}
-      {{ range $i, $e := site.Params.schema.sameAs }}{{ if $i }}, {{ end }}{{ trim $e " " }}{{ end }}
-    {{- else}}
-      {{ range $i, $e := site.Params.SocialIcons }}{{ if $i }}, {{ end }}{{ trim $e.url " " | safeURL }}{{ end }}
-    {{- end}}
-  ]
-}
+{{ $doc | jsonify (dict "indent" "  ") | safeJS }}
 </script>
 {{- else if (or .IsPage .IsSection) }}
 {{/* BreadcrumbList */}}
@@ -61,45 +56,22 @@
 </script>
 {{- if .IsPage }}
 {{- if .Params.profile }}
-{{/* ProfilePage with embedded Person — for /about-style pages */}}
-{{- $p := .Params.profile }}
+{{/* ProfilePage embedding the canonical Person — for /about-style pages (front matter: profile: true) */}}
+{{- $person := partial "templates/person_node.html" . -}}
+{{- $doc := dict
+      "@context" "https://schema.org"
+      "@type" "ProfilePage"
+      "url" .Permalink
+      "mainEntity" $person
+-}}
+{{- if not .PublishDate.IsZero }}
+  {{- $doc = merge $doc (dict "dateCreated" (.PublishDate.Format "2006-01-02T15:04:05-07:00")) -}}
+{{- end }}
+{{- if not .Lastmod.IsZero }}
+  {{- $doc = merge $doc (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05-07:00")) -}}
+{{- end }}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "url": {{ .Permalink | safeHTML }},
-  {{- if not .PublishDate.IsZero }}
-  "dateCreated": {{ .PublishDate }},
-  {{- end }}
-  {{- if not .Lastmod.IsZero }}
-  "dateModified": {{ .Lastmod }},
-  {{- end }}
-  "mainEntity": {
-    "@type": "Person",
-    "name": {{ $p.name }},
-    "url": {{ .Permalink | safeHTML }},
-    {{- with $p.jobTitle }}
-    "jobTitle": {{ . }},
-    {{- end }}
-    "image": {{ site.Params.assets.favicon | default "favicon.ico" | absURL }},
-    {{- with $p.worksFor }}
-    "worksFor": [
-      {{- range $i, $org := . }}{{ if $i }},{{ end }}
-      {
-        "@type": "Organization",
-        "name": {{ $org.name }},
-        "url": {{ $org.url | safeURL }}
-      }
-      {{- end }}
-    ],
-    {{- end }}
-    {{- with $p.sameAs }}
-    "sameAs": [
-      {{- range $i, $u := . }}{{ if $i }}, {{ end }}{{ trim $u " " | safeURL }}{{ end }}
-    ]
-    {{- end }}
-  }
-}
+{{ $doc | jsonify (dict "indent" "  ") | safeJS }}
 </script>
 {{- else }}
 <script type="application/ld+json">
@@ -134,34 +106,21 @@
   {{- end -}}
   "datePublished": {{ .PublishDate }},
   "dateModified": {{ .Lastmod }},
-  {{- with (.Params.author | default site.Params.author) }}
-  "author":
-    {{- if (or (eq (printf "%T" .) "[]string") (eq (printf "%T" .) "[]interface {}")) -}}
-  [{{- range $i, $v := . -}}
-  {{- if $i }}, {{end -}}
-  {
+  {{- $p := site.Data.person }}
+  "author": {
     "@type": "Person",
-    "name": {{ $v }}
-  }
-  {{- end }}],
-    {{- else -}}
-  {
-    "@type": "Person",
-    "name": {{ . }}
+    "@id": {{ $p.id }},
+    "name": {{ $p.name }},
+    "url": {{ $p.url }}
   },
-    {{- end -}}
-  {{- end }}
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": {{ .Permalink | safeHTML }}
   },
   "publisher": {
-    "@type": "{{- ( site.Params.schema.publisherType | default "Organization") | title -}}",
-    "name": {{ site.Title }},
-    "logo": {
-      "@type": "ImageObject",
-      "url": {{ site.Params.assets.favicon | default "favicon.ico" | absURL }}
-    }
+    "@type": "Person",
+    "@id": {{ $p.id }},
+    "name": {{ $p.name }}
   }
 }
 </script>

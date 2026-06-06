@@ -1,0 +1,26 @@
+# Canonical Person entity for JSON-LD — single source of truth.
+# The @id is the cross-domain merge key: iProxy blog posts reference it as author.@id.
+# Changing it breaks entity consolidation — coordinate with all referencing sites first.
+id = "https://rivik.dev/#person"
+name = "Ilya Rusalowski"
+url = "https://rivik.dev/"
+jobTitle = "CTO and co-founder, iProxy.online"
+sameAs = [
+  "https://github.com/rivik",
+  "https://www.linkedin.com/in/ilya-rusalowski/",
+  "https://x.com/IlyaRusalowski",
+  "https://dev.to/rivik",
+]
+
+# Org @ids must exactly match the Organization nodes on the orgs' own sites.
+# iproxy.online: pending migration from bare "https://iproxy.online" to "#organization" form.
+# sintoniastrategy.com: no JSON-LD yet — this @id is the canonical one to use when adding it.
+[[worksFor]]
+id = "https://iproxy.online/#organization"
+name = "iProxy Online"
+url = "https://iproxy.online/"
+
+[[worksFor]]
+id = "https://sintoniastrategy.com/#organization"
+name = "Sintonia Strategy & Technology"
+url = "https://sintoniastrategy.com/"

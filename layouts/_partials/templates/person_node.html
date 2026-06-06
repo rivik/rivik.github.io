@@ -1,0 +1,23 @@
+{{- /* Returns the canonical Person node (as a dict) built from data/person.toml.
+       Used by schema_json.html on home (@graph), about (ProfilePage.mainEntity)
+       and posts (author/publisher reference the same @id). */ -}}
+{{- $p := site.Data.person -}}
+{{- $orgs := slice -}}
+{{- range $p.worksFor -}}
+  {{- $orgs = $orgs | append (dict
+        "@type" "Organization"
+        "@id" .id
+        "name" .name
+        "url" .url
+      ) -}}
+{{- end -}}
+{{- $person := dict
+      "@type" "Person"
+      "@id" $p.id
+      "name" $p.name
+      "url" $p.url
+      "jobTitle" $p.jobTitle
+      "worksFor" $orgs
+      "sameAs" $p.sameAs
+-}}
+{{- return $person -}}
