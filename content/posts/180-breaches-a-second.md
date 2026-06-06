@@ -294,9 +294,9 @@ Not great, not terrible. Just engineering.
 - McKinsey "Lilli" AI Platform Compromise — autonomous agent gained broad system access in under two hours during controlled exercise
 - [Dark Reading Poll: 48% of Cybersecurity Professionals Identify Agentic AI as Top Attack Vector](https://www.darkreading.com/) — Dark Reading, 2025
 - Agent Security Readiness Survey — 80.9% in production, 14.4% with full security approval, 45.6% on shared API keys
-- [Microsoft Entra Agent ID](https://www.microsoft.com/en-us/security/business/identity-access/entra-id) — agent identity with Conditional Access policies
+- [Microsoft Entra Agent ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) — agent identity with Conditional Access policies
 - NVIDIA AI Red Team Sandboxing Guide — mandatory egress, file write, and configuration protections for AI agents
-- [OWASP Agentic AI Security Framework](https://owasp.org/www-project-agentic-ai/) — "Autonomy is earned, not a default setting," 100+ expert contributors
+- [OWASP Agentic AI Security Framework](https://genai.owasp.org/initiatives/agentic-security-initiative/) — "Autonomy is earned, not a default setting," 100+ expert contributors
 - Dennis, J.B. & Van Horn, E.C. (1966) "Programming Semantics for Multiprogrammed Computations" — capability-based security model
 - [Apple Platform Security: File Data Protection](https://support.apple.com/guide/security/welcome/web) — per-file encryption, Secure Enclave key management, protection classes
 - [Apple Platform Security: App Sandboxing and IPC](https://support.apple.com/guide/security/welcome/web) — all third-party apps sandboxed, IPC only through OS-mediated services
