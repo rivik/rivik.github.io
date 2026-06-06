@@ -44,4 +44,4 @@ They're fine — and more featureful. But for the narrow "give my script a token
 
 This is **hiding secrets, not securing them** — like moving from `passwords.txt` to Bitwarden. Touch-gating stops malware from *silently* scraping everything at rest, but if active malware can capture the plaintext at the moment you use it, it's already game over. Secret IDs (filenames) aren't encrypted either — only values.
 
-For SSH specifically, go further: keys that never leave the hardware — see [Hardware-Backed SSH Keys](/posts/hardware-backed-ssh-keys/).
+For SSH specifically, go further: keys that never leave the hardware — see [Hardware-Backed SSH Keys](/hardware-backed-ssh-keys/).
