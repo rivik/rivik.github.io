@@ -11,8 +11,6 @@ Even in the GPT era, I regularly meet engineers who know `ssh user@host` and sto
 
 3 flags · 3 bonuses · 1 man page. I hope it's intriguing enough to give it a try :)
 
-*Disclaimer: no, it's not actually Tailscale — Tailscale solves different problems and does them far more conveniently. But for "I just need to reach my boxes," SSH punches through the same holes :))*
-
 ### `-D` — Dynamic Forward: The VPN Hiding Inside Your SSH
 
 Not one forwarded port. Every port. Every host. Every DNS name. Everything that server can reach — your laptop can reach.
@@ -71,9 +69,11 @@ Want to expose a web server? `ssh -R 443:localhost:443 vps` — done.
 
 ![ssh -R reverse tunnel through a firewall](/img/ssh-tunnel-magic/reverse-tunnel.png)
 
+*Disclaimer: no, it's not actually Tailscale — Tailscale solves different problems and does them far more conveniently. But for "I just need to reach my boxes," SSH punches through the same holes :))*
+
 ### `-R` — Cautionary Tale: How Engineers Escape Corp
 
-Same flag, other direction. Big Korean corp. Office-only desktops, badges, cameras, NAT'd grey IPs, firewall cutting everything inbound. And the best part — your desktop auto-shuts-off after 8 hours. Work-life balance, problem solved :))
+Same flag, other direction. Big Korean corp. Office-only desktops, badges, cameras, NAT'd grey IPs, firewall cutting everything inbound. And the best part — the office doors lock after 8 hours. Work-life balance, problem solved :))
 
 Except not everyone in the world is Korean. On their work desktop, engineers just run:
 
