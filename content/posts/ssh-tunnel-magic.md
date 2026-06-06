@@ -5,8 +5,6 @@ draft: false
 tags: ["ssh", "networking", "tunneling", "linux", "security", "devops"]
 categories: ["Networking"]
 summary: "SSH punching for everyone who only knows `ssh user@host` — how -D replaces a corporate VPN, -R replaces a mesh VPN for NAT'd boxes, and -L forwards Unix sockets. 3 flags, 3 bonuses, 1 man page."
-canonicalURL: "https://www.linkedin.com/posts/ilya-rusalowski_ssh-tunnel-magic-activity-7453404765553848320-ruaR"
-ShowCanonicalLink: true
 ---
 
 Even in the GPT era, I regularly meet engineers who know `ssh user@host` and stop there. Yet hiding behind three flags — `-D`, `-R`, `-L` — is a full replacement for a VPN client, a mesh VPN, and a proxy stack. There's also a story below about how engineers at one very big Korean corp used a single reverse tunnel to keep working past locked doors — for years, long before COVID.
