@@ -5,6 +5,7 @@ id = "https://rivik.dev/#person"
 name = "Ilya Rusalowski"
 url = "https://rivik.dev/"
 jobTitle = "CTO and co-founder of iProxy.online; co-founder of Sintonia Strategy & Technology"
+addressCountry = "PT"
 sameAs = [
   "https://github.com/rivik",
   "https://www.linkedin.com/in/ilya-rusalowski/",

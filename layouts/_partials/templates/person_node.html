@@ -20,4 +20,7 @@
       "worksFor" $orgs
       "sameAs" $p.sameAs
 -}}
+{{- with $p.addressCountry -}}
+  {{- $person = merge $person (dict "address" (dict "@type" "PostalAddress" "addressCountry" .)) -}}
+{{- end -}}
 {{- return $person -}}
