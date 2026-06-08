@@ -36,7 +36,7 @@ buildExpired = false
 
 [params.homeInfoParams]
   Title = "Hi 👋"
-  Content = "I'm Ilya — CTO and co-founder of <a href=\"https://iproxy.online\">iProxy.online</a>, also running <a href=\"https://sintoniastrategy.com\">Sintonia Strategy & Technology</a> on the side. Engineer and entrepreneur, based in Portugal.\n\nThis hub collects my originals plus reposts from my projects. More on the <a href=\"/about/\">about</a> page."
+  Content = "I'm Ilya — CTO and co-founder of <a href=\"https://iproxy.online\">iProxy.online</a>, and co-founder of <a href=\"https://sintoniastrategy.com\">Sintonia Strategy & Technology</a>. Engineer and entrepreneur, based in Portugal.\n\nThis hub collects my originals plus reposts from my projects. More on the <a href=\"/about/\">about</a> page."
 
 [[params.socialIcons]]
   name = "github"

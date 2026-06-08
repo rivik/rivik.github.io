@@ -19,7 +19,7 @@ Now I'm CTO and co-founder of [iProxy.online](https://iproxy.online). We build e
  doing the parts that felt fun (hiring great people, designing infrastructure, sweating developer experience, market research, project-managing the
 mess), and the rest, my co-founders and our small team handled with grace. None of this would exist without them.
 
-On the side, I run [Sintonia Strategy & Technology](https://sintoniastrategy.com) — a loose circle of hackers and MBA-trained strategists, mostly friends and former colleagues, who occasionally team up when something interesting shows up. No headcount, no roadmap — just good people doing good work together, mostly for the fun of it. A longer-horizon project, and the kind of work I want to still be doing in ten years.
+On the side, I co-founded and run [Sintonia Strategy & Technology](https://sintoniastrategy.com) — a loose circle of hackers and MBA-trained strategists, mostly friends and former colleagues, who occasionally team up when something interesting shows up. No headcount, no roadmap — just good people doing good work together, mostly for the fun of it. A longer-horizon project, and the kind of work I want to still be doing in ten years.
 
 I have a half-superstitious theory about work: chase the fun problem, not the money. In my experience, money tends to show up afterwards, slightly
 surprised to find you there.

@@ -4,7 +4,7 @@
 id = "https://rivik.dev/#person"
 name = "Ilya Rusalowski"
 url = "https://rivik.dev/"
-jobTitle = "CTO and co-founder, iProxy.online"
+jobTitle = "CTO and co-founder of iProxy.online; co-founder of Sintonia Strategy & Technology"
 sameAs = [
   "https://github.com/rivik",
   "https://www.linkedin.com/in/ilya-rusalowski/",
@@ -13,8 +13,7 @@ sameAs = [
 ]
 
 # Org @ids must exactly match the Organization nodes on the orgs' own sites.
-# iproxy.online: pending migration from bare "https://iproxy.online" to "#organization" form.
-# sintoniastrategy.com: no JSON-LD yet — this @id is the canonical one to use when adding it.
+# iproxy.online and sintoniastrategy.com both expose matching Organization nodes.
 [[worksFor]]
 id = "https://iproxy.online/#organization"
 name = "iProxy Online"
