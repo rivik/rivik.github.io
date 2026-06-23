@@ -2,7 +2,6 @@
 title: "When TLS 1.3 Silently Dies Inside Your Android Proxy"
 date: 2026-03-20
 draft: false
-tags: ["security", "network", "linux", "android", "tls", "go"]
 categories: ["Security"]
 summary: "A post-mortem of intermittent HTTPS failures across a mobile proxy fleet: TLS 1.3 handshakes silently dying on memory-starved Android devices — large multi-packet handshake messages, inflated by post-quantum key shares, stressing proxy buffers under memory pressure."
 canonicalURL: "https://dev.to/rivik/when-tls-13-silently-dies-inside-your-android-proxy-1c3"

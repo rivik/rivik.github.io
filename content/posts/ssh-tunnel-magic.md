@@ -2,8 +2,7 @@
 title: "SSH Tunnel Magic: Your SSH Already Is Tailscale"
 date: 2026-04-24
 draft: false
-tags: ["ssh", "networking", "tunneling", "linux", "security", "devops"]
-categories: ["Networking"]
+categories: ["Infrastructure"]
 summary: "SSH punching for everyone who only knows `ssh user@host` — how -D replaces a corporate VPN, -R replaces a mesh VPN for NAT'd boxes, and -L forwards Unix sockets. 3 flags, 3 bonuses, 1 man page."
 ---
 

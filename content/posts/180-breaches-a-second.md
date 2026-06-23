@@ -3,7 +3,6 @@ title: "180 Breaches a Second: How Software Broke Its Promise, and the Radical F
 slug: "180-breaches-a-second"
 date: 2026-04-03
 draft: false
-tags: ["security", "software-quality", "data-breaches", "passkeys", "ai-agents", "zero-trust", "capability-security", "opinion"]
 categories: ["Security"]
 summary: "180 accounts are breached every second — and most of it comes down to reused passwords and missing MFA. A look at the software quality collapse behind the headlines, and why the fix is the same infrastructure-level move HTTPS once made: passkeys, on-device DLP, and capability-scoped AI agents."
 ---

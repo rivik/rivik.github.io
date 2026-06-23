@@ -2,8 +2,7 @@
 title: "10G at Home: $15 M.2 Expander Turns an Old HP Mini Into a 10GbE Test Rig"
 date: 2025-12-16
 draft: false
-tags: ["networking", "10gbe", "xgs-pon", "homelab", "pcie", "linux", "hardware"]
-categories: ["Networking"]
+categories: ["Infrastructure"]
 summary: "My ISP started upselling 10gbit XGS-PON — but how to test it without buying a 10G-capable machine? A $15 noname M.2 → PCIe expander + AQC107 NIC on an old HP G2 mini did the job. Plus the pcie_aspm=off gotcha."
 ---
 

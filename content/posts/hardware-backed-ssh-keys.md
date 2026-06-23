@@ -2,7 +2,6 @@
 title: "Hardware-backed SSH keys end to end: YubiKey, PIV, software alternatives, and where SSH CAs fit in"
 date: 2026-05-09
 draft: false
-tags: ["ssh", "yubikey", "fido2", "piv", "security", "ssh-ca", "linux", "ansible"]
 categories: ["Security"]
 summary: "A working guide to using a YubiKey for SSH on a real Linux fleet — the four knobs (resident, touch, PIN, agent), a four-mode policy for root and Ansible, software-only alternatives, and where SSH CAs fit in."
 canonicalURL: "https://dev.to/rivik/hardware-backed-ssh-keys-end-to-end-yubikey-piv-software-alternatives-and-where-ssh-cas-fit-in-3lob"

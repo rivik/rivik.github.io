@@ -2,7 +2,6 @@
 title: "ykvault: Stop Storing API Tokens as Plaintext"
 date: 2026-06-06
 draft: false
-tags: ["yubikey", "security", "secrets", "cli", "go", "hardware-keys"]
 categories: ["Security"]
 summary: "Are you still keeping API tokens in ~/.secrets? Any app you install can read them. ykvault encrypts every secret with a YubiKey challenge-response key — each get/set requires a physical touch, and the encrypted files are useless without your key."
 ---

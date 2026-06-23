@@ -2,8 +2,7 @@
 title: "I was afraid of agents yolo-mode for half a year"
 date: 2026-05-10
 draft: false
-tags: ["agents", "sandboxing", "landlock", "go", "claude-code", "codex", "gemini"]
-categories: ["Tools"]
+categories: ["Engineering"]
 summary: "Why I built agent-landlock — a small Go wrapper that uses Linux Landlock LSM to give coding agents YOLO mode without letting them escape the project directory."
 canonicalURL: "https://www.linkedin.com/posts/ilya-rusalowski_i-was-afraid-of-agents-yolo-mode-for-half-activity-7459335865316622336-Z549"
 ShowCanonicalLink: true

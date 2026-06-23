@@ -11,6 +11,9 @@ buildExpired = false
 [permalinks]
   posts = "/:slug/"
 
+[taxonomies]
+  category = "categories"
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
@@ -63,9 +66,9 @@ buildExpired = false
   weight = 20
 
 [[menu.main]]
-  identifier = "tags"
-  name = "tags"
-  url = "/tags/"
+  identifier = "categories"
+  name = "categories"
+  url = "/categories/"
   weight = 30
 
 [markup.goldmark.renderer]

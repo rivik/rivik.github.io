@@ -2,8 +2,7 @@
 title: "Systemd Unreclaimable Kernel Memory Leak"
 date: 2026-02-19
 draft: false
-tags: ["linux", "systemd", "kernel", "cgroups", "memory", "debugging", "containers"]
-categories: ["Linux"]
+categories: ["Infrastructure"]
 summary: "How a frequently-restarting systemd unit with Type=exec leaked unreclaimable kernel slab memory (~60 MB/day) on Ubuntu hosts via a cgroup memory-accounting bug — and why only a full host reboot could free it."
 canonicalURL: "https://www.linkedin.com/pulse/systemd-unreclaimable-kernel-memory-leak-iproxyonline-jonxe"
 ShowCanonicalLink: true

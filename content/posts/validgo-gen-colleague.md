@@ -2,8 +2,7 @@
 title: "validgo-gen: OpenAPI → Go Validation Done Right"
 date: 2026-06-06
 draft: false
-tags: ["go", "openapi", "codegen", "validation", "api"]
-categories: ["Go"]
+categories: ["Engineering"]
 summary: "My colleague Yury built validgo-gen — an OpenAPI 3.0 → Go generator that finally distinguishes missing fields from explicit nulls from zero values. Two-layer validation, chi integration, idiomatic output."
 ---
 
